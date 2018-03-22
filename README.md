@@ -24,4 +24,7 @@ The presenter is responsible to act as the middle man between view and model. It
 The view, usually implemented by an Activity (it may be a Fragment, a View… depending on how the app is structured), will contain a reference to the presenter. Presenter will be ideally provided by a dependency injector such as Dagger, but in case you don’t use something like this, it will be responsible for creating the presenter object. The only thing that the view will do is calling a method from the presenter every time there is an interface action (a button click for example).
 
 # The model
-In an application with a good layered architecture, this model would only be the gateway to the domain layer or business logic. If we were using the Uncle Bob clean architecture , the model would probably be an interactor that implements a use case. But this is another topic that I’d like to discuss in future articles. For now, it is enough to see it as the provider of the data we want to display in the view.
+In an application with a good layered architecture, this model would only be the gateway to the domain layer or business logic. If we were using the Uncle Bob clean architecture , the model would probably be an interactor that implements a use case. For now, it is enough to see it as the provider of the data we want to display in the view.
+
+# Conclusion
+Separating interface from logic in Android is not easy, but the Model-View-Presenter pattern makes a little easier to prevent our activities end up degrading into very coupled classes consisting on hundreds or even thousands of lines. In large applications it is essential to organize our code well. If not, it becomes impossible to maintain and extend.
