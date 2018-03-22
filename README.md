@@ -28,3 +28,7 @@ In an application with a good layered architecture, this model would only be the
 
 # Conclusion
 Separating interface from logic in Android is not easy, but the Model-View-Presenter pattern makes a little easier to prevent our activities end up degrading into very coupled classes consisting on hundreds or even thousands of lines. In large applications it is essential to organize our code well. If not, it becomes impossible to maintain and extend.
+
+# Source -
+https://www.linkedin.com/pulse/when-use-mvc-mvp-mvvm-nothing-ahmed-adel/
+https://antonioleiva.com/mvp-android/
